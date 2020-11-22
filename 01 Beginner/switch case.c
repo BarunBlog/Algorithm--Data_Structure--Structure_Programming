@@ -1,26 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    char ch;
-    getchar();
-   while(scanf("%c",&ch)==1)
-    {
-     switch(ch=='Z')
-    {
+     char ch;
+
+     scanf("%c",&ch);
+     switch(ch)
+     {
         case 'A':
             printf("Did not match\n");
-            //break;
+            break;
         case 'B':
             printf("Brown\n");
-            //break;
+            break;
         case 'M':
             printf("Match\n");
-            //break;
+            break;
         default:
-       printf("Nothing\n");
+            printf("Nothing\n");
 
-   }
-    }
+     }
+
 
   /*  int n=3;
     switch(n+1)

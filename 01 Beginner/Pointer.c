@@ -26,9 +26,32 @@ int main()
     printf("\nu=%d  &u=%d  pu=%d  *pu=%d",u,&u,pu,*pu);
     printf("\n\nv=%d  &v=%X  pv=%X  *pv=%d",v,&v,pv,*pv);
 }*/
-/*#include<stdio.h>
+#include<stdio.h>
 int main()
 {
+    int a;
+
+    int *p;
+
+    /// *p = 6; will give error, cause it expects address but got integer
+
+    p = &a;
+    printf("address of a=%x\n", &a);
+    printf("address of p=%x\n", p);
+
+    a=5;
+
+    printf("value of a=%d\n", a);
+    printf("value of p=%d\n", *p);
+
+    *p = 6;
+
+    printf("value of a=%d\n", a);
+    printf("value of p=%d\n", *p);
+
+
+
+
     int i,*pi=&i;
     char c,*pc=&c;
     float f,*pf=&f;
@@ -36,5 +59,5 @@ int main()
     printf("%d %d %d %d\n",pi,pc,pf,pd);
     pi++;pc++;pf++;pd++;
     printf("%d %d %d %d\n",pi,pc,pf,pd);
-}*/
+}
 

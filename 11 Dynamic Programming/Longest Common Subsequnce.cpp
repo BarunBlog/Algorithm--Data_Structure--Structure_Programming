@@ -16,7 +16,7 @@ int main()
             if(i==0)
                 T[0][j]=0;
             else if(str2[i-1]==str1[j-1])
-                T[i][j]=T[i][j-1]+1;
+                T[i][j]=T[i-1][j-1]+1;
             else if(str2[i-1]!=str1[j-1])
                 T[i][j]=max(T[i][j-1],T[i-1][j]);
         }

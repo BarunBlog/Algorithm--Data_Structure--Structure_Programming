@@ -1,3 +1,4 @@
+/// Time Complexity: O(n)
 #include<bits/stdc++.h>
 #define MAX_N 100000
 using namespace std;
